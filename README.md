@@ -25,10 +25,6 @@ Unplanned machine failures cause costly downtime and safety risks. Machines show
 ## Tech Stack
 Python 3.10+, pandas, NumPy, scikit-learn (HistGradientBoosting, IsolationForest), Streamlit, Plotly.
 
-## Quick Start (Run the Project in 2 Minutes)
-
-> **Fastest option:** open the live demo, no installation needed: https://teamduo-neural-storm-ft03.streamlit.app/
-
 ### Prerequisites
 - **Python 3.10 or newer** (check with `python --version`)
 - **Git** (check with `git --version`)
