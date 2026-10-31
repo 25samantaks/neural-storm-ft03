@@ -25,26 +25,55 @@ Unplanned machine failures cause costly downtime and safety risks. Machines show
 ## Tech Stack
 Python 3.10+, pandas, NumPy, scikit-learn (HistGradientBoosting, IsolationForest), Streamlit, Plotly.
 
-## Setup and Installation
-```bash
+## Quick Start (Run the Project in 2 Minutes)
+
+> **Fastest option:** open the live demo, no installation needed: https://teamduo-neural-storm-ft03.streamlit.app/
+
+### Prerequisites
+- **Python 3.10 or newer** (check with `python --version`)
+- **Git** (check with `git --version`)
+
+### Where to type these commands
+Open a **terminal** on your computer:
+- **Windows:** press the Windows key, type `PowerShell`, press Enter
+- **Mac:** open the `Terminal` app
+- **Linux:** open your terminal
+
+Then copy and paste the commands below **one block at a time**.
+
+### Windows (PowerShell)
+```powershell
 git clone https://github.com/25samantaks/neural-storm-ft03.git
 cd neural-storm-ft03
 python -m venv venv
-```
-Activate the virtual environment:
-- **Windows (PowerShell):** `venv\Scripts\activate`
-- **Mac/Linux:** `source venv/bin/activate`
-
-Then install the dependencies:
-```bash
+venv\Scripts\activate
 pip install -r requirements.txt
-```
-
-## How to Run Locally
-```bash
 python -m streamlit run app.py
 ```
-Then open http://localhost:8501 in your browser. Models train automatically on first load (about 2 seconds). Use the **"Current cycle"** slider in the sidebar to move a machine from healthy to failing, and the **"Machine"** dropdown to switch machines.
+
+### Mac / Linux
+```bash
+git clone https://github.com/25samantaks/neural-storm-ft03.git
+cd neural-storm-ft03
+python3 -m venv venv
+source venv/bin/activate
+pip install -r requirements.txt
+python -m streamlit run app.py
+```
+
+### What you should see
+- The browser opens automatically at **http://localhost:8501**. If it doesn't, paste that address into your browser.
+- The models train on first load (about 2 to 5 seconds).
+- Use the **"Current cycle"** slider in the left sidebar. Drag it from left to right to watch a machine go from **OK** to **WARNING** to **CRITICAL**.
+- Use the **"Machine"** dropdown to switch between machines.
+- Press `Ctrl + C` in the terminal to stop the app.
+
+### Troubleshooting
+| Problem | Fix |
+|---|---|
+| `python` not recognized | Try `py` (Windows) or `python3` (Mac/Linux) |
+| PowerShell blocks `venv\Scripts\activate` | Run `Set-ExecutionPolicy -Scope Process Bypass`, then activate again |
+| `streamlit` not recognized | Use `python -m streamlit run app.py` as shown above |
 
 ## Project Structure
 ```
