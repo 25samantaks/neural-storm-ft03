@@ -48,10 +48,11 @@ Then open http://localhost:8501 in your browser. Models train automatically on f
 
 ## Project Structure
 ```
+├── .gitignore            
+├── README.md
 ├── app.py            # Streamlit dashboard
 ├── requirements.txt
-├── README.md
-├── docs/             # screenshots
+├── docs/            # screenshots
 └── src/
     ├── __init__.py
     ├── data.py       # synthetic run-to-failure sensor simulator
