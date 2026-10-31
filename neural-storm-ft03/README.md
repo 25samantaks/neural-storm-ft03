@@ -1,4 +1,4 @@
-<# Predictive Maintenance (FT-03)🛠️
+# Predictive Maintenance (FT-03)🛠️
 
 **Neural Storm 2026 · Track: Future Tech · Problem Statement: FT-03 Predictive Maintenance for Industry**
 
@@ -67,4 +67,4 @@ requirements.txt
 - Try LSTM / 1D-CNN and RUL uncertainty estimates.
 
 ## AI Tools Used
-Claude and Chatgpt for code scaffolding and README drafting, GitHub Copilot for autocomplete. All code was reviewed and tested by the team.>
+Claude and Chatgpt for code scaffolding and README drafting, GitHub Copilot for autocomplete. All code was reviewed and tested by the team.
